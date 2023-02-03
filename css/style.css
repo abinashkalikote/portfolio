@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --navy-color: rgb(7, 7, 31);
+  --lightnavy-color: rgb(18, 18, 59);
+  --white-color: white;
+  --gray-color: gray;
+  --lightgray-color: rgb(184, 184, 184);
+}
+
+body {
+  height: auto;
+  display: flex;
+  font-family: "Roboto";
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+
+/* Avatar styling start */
+
+.navbar-avatar {
+  height: 165px;
+  width: 200px;
+  border-bottom: 1px solid var(--lightgray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 140px;
+  width: 140px;
+  border: 6px solid var(--lightnavy-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar>img {
+  height: 140px;
+  margin-left: -5px;
+}
+
+/* Avatar Styling End */
+
+
+
+/* Navbar Styling Start */
+
+.navbar ul {
+  list-style: none;
+  display: block;
+  width: 200px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--gray-color);
+  width: 200px;
+  padding: 10px 5px;
+  font-size: 1.25rem;
+  transition: all 0.4s ease-in;
+}
+
+.navbar ul li a:hover {
+  padding-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li a::before {
+  content: "❤";
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.navbar ul li a:hover::before {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  opacity: 1;
+}
+
+.fa {
+  color: var(--navy-color);
+  display: inline-block;
+  padding: 4px;
+}
+
+/* Navbar styling End */
+
+
+
+.container {
+  flex-basis: calc(100% - 200px);
+}
+
+/* Home class style start */
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navy-color);
+}
+
+.home-container {
+  height: 70vh;
+  width: 70vw;
+  color: var(--white-color);
+  text-shadow: 1px 1px 3px gray;
+}
+
+.home-container>h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding: 20px 0;
+}
+
+.home-container #typing {
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+#typing .typing {
+  color: rgb(47, 142, 231);
+  font-weight: lighter;
+}
+
+.home-container .sometext {
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+.home-socialmedia-links {
+  padding: 10px 0;
+}
+
+
+.home-socialmedia-links>a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+  background-color: white;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.home-socialmedia-links>a:hover>i {
+  color: var(--white-color);
+}
+
+/* For Github */
+
+.home-socialmedia-links>a:nth-child(1):hover {
+  background-color: black;
+  box-shadow: 0 0 5px var(--white-color);
+}
+
+/* for facebook */
+
+.home-socialmedia-links>a:nth-child(2):hover {
+  background-color: rgb(12, 60, 133);
+  box-shadow: 0 0 5px var(--white-color);
+}
+
+/* Home buttons */
+
+.home-buttons {
+  padding: 10px 0;
+}
+
+.home-buttons>a {
+  text-decoration: none;
+  text-shadow: none;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.home-buttons .readmore {
+  background-color: var(--white-color);
+  color: var(--navy-color);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.home-buttons .readmore:hover {
+  box-shadow: inset 0 0 8px var(--navy-color);
+}
+
+.home-buttons .contactme {
+  margin-left: 10px;
+  background-color: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.home-buttons .contactme:hover {
+  box-shadow: inset 0 0 8px var(--white-color);
+}
+
+
+
+/* Home class style end */
+
+
+/* About class Style Start */
+
+
+.about {
+  min-height: 100vh;
+  background: url('../images/bg.png') repeat;
+  padding-bottom: 30px;
+}
+
+.about-header {
+  /* height: 100px; */
+  padding: 20px;
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  background-color: var(--navy-color);
+  filter: saturate(2);
+  margin-bottom: 50px;
+}
+
+.about-main {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+}
+
+.about-main .description {
+  display: block;
+  margin-inline-end: 50px;
+  margin-inline-start: 50px;
+  color: black;
+  text-align: justify;
+}
+
+.technologies,
+.short-note {
+  display: block;
+  margin-inline-end: 50px;
+  margin-inline-start: 50px;
+  margin-block-start: 30px;
+}
+
+
+
+/* About class Style End */
