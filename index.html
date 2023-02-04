@@ -30,7 +30,7 @@
         <a href="#"><i class="fa fa-list"></i> Projects</a>
       </li>
       <li>
-        <a href="#"><i class="fa fa-solid fa-pen-nib"></i> Skills</a>
+        <a href="#skills"><i class="fa fa-solid fa-pen-nib"></i> Skills</a>
       </li>
       <li>
         <a href="#"><i class="fa fa-solid fa-graduation-cap"></i> Education</a>
@@ -52,8 +52,8 @@
       <div class="home-container">
         <h1>Hi, I'm Abinash Kalikote.</h1>
         <div id="typing">
-          A <span class="typing"></span>
-        </div>
+          A <span class="typing">
+          </span> </div>
         <div class="sometext">
           Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and
           challenging real-world problems.
@@ -82,26 +82,18 @@
 
     <!-- About Section Sart -->
 
-    <div class="about" id="about">
-      <div class="about-header">
-        ABOUT
+    <div class="section" id="about">
+      <div class="section-header">
+        ABOUT ME
       </div>
 
-      <div class="about-main">
+      <div class="section-main">
         <div class="description">
           I am a Computer Science Student. I enjoy problem-solving and coding. Always
           strive to bring 100% to the work I do. I have worked on technologies like Laravel, Vue, MySQL,
           MSSQL Server, HTML5, CSS, JavaScript, C during my bachelor's. I have 1 Year of professional work
           experience which helped me strengthen my experience in Laravel, Vue, and MySQL. I am passionate about
           developing complex applications that solve real-world problems impacting millions of users.
-        </div>
-
-        <div class="technologies">
-          <div><b>Languages:</b> PHP, JavaScript, C, C#, HTML/CSS</div>
-          <div><b>Databases:</b> MySQL, MSSQL Server</div>
-          <div><b>Libraries:</b> Jquery</div>
-          <div><b>Frameworks:</b> Laravel, Vue.js, Bootstrap, Materialize</div>
-          <div><b>Tools & Technologies:</b> IIS, Git, Apache Server</div>
         </div>
 
         <div class="short-note">
@@ -113,6 +105,78 @@
 
     <!-- About Section End -->
 
+    <!-- Skills Section Sart -->
+
+    <div class="section" id="skills">
+      <div class="section-header">
+        SKILLS
+      </div>
+
+      <div class="section-main">
+
+        <div class="technologies">
+          <div class="accordion">
+            <div class="accordion-header" id="acch-1">
+              Languages
+            </div>
+            <span class="accordion-body" id="accb-1">
+              <span class="capsule">PHP</span>
+              <span class="capsule">JavaScript <i class="fa-brands fa-js"></i></span>
+              <span class="capsule">C</span>
+              <span class="capsule">C# <i class="fa-solid fa-code"></i></span>
+              <span class="capsule">HTML <i class="fa-brands fa-html5"></i></span>
+              <span class="capsule">CSS <i class="fa-brands fa-css3-alt"></i></span>
+            </span>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header" id="acch-2">
+              Databases
+            </div>
+            <div class="accordion-body" id="accb-2">
+              <span class="capsule">MySQL <i class="fa-solid fa-database"></i></span>
+              <span class="capsule">SQL Sever <i class="fa-solid fa-server"></i></span>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header" id="acch-3">
+              Libraries
+            </div>
+            <div class="accordion-body" id="accb-3">
+              <span class="capsule">Jquery <i class="fa-brands fa-js"></i></span>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header" id="acch-4">
+              Frameworks
+            </div>
+            <div class="accordion-body" id="accb-4">
+              <span class="capsule">Laravel <i class="fa-brands fa-laravel"></i></span>
+              <span class="capsule">Vue.js <i class="fa-brands fa-vuejs"></i></span>
+              <span class="capsule">Bootstarp <i class="fa-brands fa-bootstrap"></i></span>
+              <span class="capsule">Materialize <i class="fa-brands fa-css3"></i></span>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header" id="acch-5">
+              Tools & Technologies
+            </div>
+            <div class="accordion-body" id="accb-5">
+              <span class="capsule">IIS <i class="fa-solid fa-server"></i></span>
+              <span class="capsule">Git <i class="fa-brands fa-git"></i></span>
+              <span class="capsule">Apache Server <i class="fa-solid fa-server"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Skills Section End -->
 
   </div>
 
@@ -131,6 +195,33 @@
     typeSpeed: 80,
     backSpeed: 40,
   });
+</script>
+
+<script>
+
+  // Select all accordion header for loop
+  let accordion = document.querySelectorAll('.accordion-header');
+  let i = 0;
+  while (i < accordion.length) {
+    accordion[i].addEventListener("click", function () {
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+    i++;
+  }
+
+
+
+
+  function clg(txt) {
+    console.log(txt);
+  }
 </script>
 
 </html>

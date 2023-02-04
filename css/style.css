@@ -231,13 +231,13 @@ body {
 /* About class Style Start */
 
 
-.about {
+.section {
   min-height: 100vh;
   background: url('../images/bg.png') repeat;
   padding-bottom: 30px;
 }
 
-.about-header {
+.section-header {
   /* height: 100px; */
   padding: 20px;
   color: var(--white-color);
@@ -249,13 +249,13 @@ body {
   margin-bottom: 50px;
 }
 
-.about-main {
+.section-main {
   font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 2.5rem;
 }
 
-.about-main .description {
+.section-main .description {
   display: block;
   margin-inline-end: 50px;
   margin-inline-start: 50px;
@@ -274,3 +274,65 @@ body {
 
 
 /* About class Style End */
+
+
+
+/* Accordion start */
+
+.technologies{
+  user-select: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+
+.accordion:first-child{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.accordion:last-child{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.accordion{
+  border: 1px solid gray;
+}
+
+.accordion-header{
+  padding: 5px 5px 5px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-header:hover{
+  background-color: #eee;
+}
+
+.accordion-body{
+  padding-left: 50px;
+  transition: all 0.4s;
+  /* display: none; */
+}
+
+.arrow{
+  float: right;
+  padding-right: 20px;
+}
+
+.capsule{
+  padding: 2px 10px;
+  background-color: var(--navy-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.capsule:hover{
+  color: #eee;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Accordion End */
