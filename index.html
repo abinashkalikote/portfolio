@@ -23,20 +23,20 @@
       <li>
         <a href="#about"><i class="fa fa-user"></i> About</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#"><i class="fa fa-brands fa-slack"></i> Experience</a>
       </li>
       <li>
         <a href="#"><i class="fa fa-list"></i> Projects</a>
-      </li>
+      </li> -->
       <li>
         <a href="#skills"><i class="fa fa-solid fa-pen-nib"></i> Skills</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#"><i class="fa fa-solid fa-graduation-cap"></i> Education</a>
-      </li>
+      </li> -->
       <li>
-        <a href="#"><i class="fa fa-solid fa-envelope"></i> Contact</a>
+        <a href="#contact"><i class="fa fa-solid fa-envelope"></i> Contact</a>
       </li>
       <li>
         <a href="#"><i class="fa fa-regular fa-folder-closed"></i> Resume</a>
@@ -71,7 +71,7 @@
 
         <div class="home-buttons">
           <a href="#about" class="readmore">Read More</a>
-          <a href="#" class="contactme">Contact Me</a>
+          <a href="#contact" class="contactme">Contact Me</a>
         </div>
       </div>
     </div>
@@ -178,9 +178,83 @@
 
     <!-- Skills Section End -->
 
+    <!-- Contact Section Start -->
+    <div class="section" id="contact">
+      <!-- <div class="section-header">
+        Contact
+      </div> -->
+
+      <div class="section-main">
+        <div class="contact-main">
+          <div class="contact-info">
+
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-map-location-dot contact-icon"></i> Address
+              </div>
+              <div class="card-body">
+                Shivasatakshi - 02, Jhapa, Nepal
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-phone-alt contact-icon"></i> Let's Talk
+              </div>
+              <div class="card-body phoneno">
+                <a href="tel:+977 9815002824" class="phoneno-link">+977 9815002824</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-mail-bulk contact-icon"></i> General Support
+              </div>
+              <div class="card-body email">
+                <a href="mailto:lkalikote1@gmail.com" class="phoneno-link">lkalikote1@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send A Message</h3>
+            <form action="/contact/Index" method="post" autocomplete="off" autocapitalize="on">
+
+              <div class="row">
+                <div class="form-group">
+                  <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Full name"
+                    required="required" autofocus="autofocus">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="example@gmail.com"
+                    required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" cols="30" rows="10"
+                    placeholder="Write a message here..." required></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <input type="submit" value="Send Message" class="sendmessagebtn">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Contact Section End -->
+
   </div>
-
-
 
 
 
@@ -219,6 +293,7 @@
 
 
 
+  // For testing purpose
   function clg(txt) {
     console.log(txt);
   }
